@@ -138,9 +138,32 @@ border-bottom:1px solid #ddd;
 }
 
 </style>
+const doc = document.getElementById("doc");
+const id = document.getElementById("id");
+const btn = document.getElementById("btn");
 
+function enableButton() {
+    if (doc.value.trim() !== "" && id.value.trim() !== "") {
+        btn.disabled = false;
+        btn.style.background = "#177245";
+        btn.style.opacity = "1";
+        btn.style.cursor = "pointer";
+    } else {
+        btn.disabled = true;
+        btn.style.background = "#A7D7C5";
+        btn.style.opacity = "0.7";
+        btn.style.cursor = "not-allowed";
+    }
+}
+
+doc.addEventListener("input", enableButton);
+id.addEventListener("input", enableButton);
+
+enableButton();
 </head>
-
+<div id="loader" class="loader">
+    <div class="spinner"></div>
+</div>
 <body>
 
 
@@ -256,6 +279,29 @@ id="id">
 <script>
 
 function check(){
+
+var doc=document.getElementById("doc").value;
+var id=document.getElementById("id").value;
+
+document.getElementById("loader").style.display="flex";
+
+setTimeout(function(){
+
+document.getElementById("loader").style.display="none";
+
+if(doc=="440192832" && id=="1118662756"){
+
+document.getElementById("success").style.display="block";
+
+}else{
+
+document.getElementById("error").style.display="flex";
+
+}
+
+},1500);
+
+}
 
 var doc=document.getElementById("doc").value;
 
