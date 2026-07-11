@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+[٥:١٨ ص, ١١‏/٧‏/٢٠٢٦] A: <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
 <meta charset="UTF-8">
@@ -98,6 +98,177 @@ window.location.href="document.pdf";
 else{
 
 alert("البيانات غير صحيحة");
+
+}
+
+}
+
+</script>
+
+</body>
+</html>
+[٥:٣١ ص, ١١‏/٧‏/٢٠٢٦] A: <!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>التحقق من الوثيقة</title>
+
+<style>
+body{
+margin:0;
+background:#f4f6f8;
+font-family:Tahoma,Arial;
+}
+
+.container{
+max-width:520px;
+margin:40px auto;
+padding:20px;
+}
+
+.card{
+background:#fff;
+border-radius:15px;
+padding:30px;
+box-shadow:0 5px 20px rgba(0,0,0,.12);
+}
+
+h2{
+text-align:center;
+color:#18794e;
+margin-bottom:30px;
+}
+
+input{
+width:100%;
+padding:15px;
+font-size:18px;
+border:1px solid #ccc;
+border-radius:8px;
+margin-bottom:20px;
+box-sizing:border-box;
+}
+
+button{
+width:100%;
+padding:16px;
+background:#1f8f55;
+color:white;
+border:none;
+border-radius:8px;
+font-size:22px;
+cursor:pointer;
+}
+
+button:hover{
+background:#167545;
+}
+
+#result{
+display:none;
+margin-top:30px;
+padding:20px;
+background:#eef8f1;
+border-radius:10px;
+line-height:2;
+}
+
+.success{
+color:#198754;
+font-size:22px;
+font-weight:bold;
+text-align:center;
+margin-bottom:20px;
+}
+
+table{
+width:100%;
+border-collapse:collapse;
+}
+
+td{
+padding:8px;
+border-bottom:1px solid #ddd;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="card">
+
+<h2>التحقق من الوثيقة</h2>
+
+<input id="doc" placeholder="رقم الوثيقة">
+
+<input id="id" placeholder="رقم هوية الوارث">
+
+<button onclick="check()">تحقق</button>
+
+<div id="result">
+
+<div class="success">
+✅ تم التحقق من صحة الوثيقة
+</div>
+
+<table>
+
+<tr>
+<td><b>رقم الوثيقة</b></td>
+<td>440192832</td>
+</tr>
+
+<tr>
+<td><b>رقم هوية الوارث</b></td>
+<td>1118662756</td>
+</tr>
+
+<tr>
+<td><b>اسم المتوفى</b></td>
+<td>سعيد عبدالله احمد علوان</td>
+</tr>
+
+<tr>
+<td><b>تاريخ إصدار الوثيقة</b></td>
+<td>1444/12/28</td>
+</tr>
+
+</table>
+
+<br>
+
+<a href="document.pdf">
+<button>
+عرض الوثيقة
+</button>
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+<script>
+
+function check(){
+
+var doc=document.getElementById("doc").value.trim();
+
+var id=document.getElementById("id").value.trim();
+
+if(doc=="440192832" && id=="1118662756"){
+
+document.getElementById("result").style.display="block";
+
+}else{
+
+alert("بيانات التحقق غير صحيحة");
 
 }
 
