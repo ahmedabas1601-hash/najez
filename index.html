@@ -1,13 +1,109 @@
 <!DOCTYPE html>
-<html>
+<html lang="ar" dir="rtl">
 <head>
-<meta charset="utf-8">
-<script>
-window.location.replace("/document.pdf");
-</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>التحقق من الوثيقة</title>
+
+<style>
+
+body{
+font-family:Tahoma,Arial;
+background:#f3f4f6;
+margin:0;
+padding:40px;
+}
+
+.box{
+max-width:500px;
+margin:auto;
+background:#fff;
+padding:30px;
+border-radius:15px;
+box-shadow:0 0 15px rgba(0,0,0,.15);
+}
+
+h2{
+color:#0b8f59;
+text-align:center;
+margin-bottom:30px;
+}
+
+input{
+width:100%;
+padding:15px;
+font-size:18px;
+margin-bottom:20px;
+border:1px solid #ccc;
+border-radius:10px;
+box-sizing:border-box;
+}
+
+button{
+width:100%;
+padding:15px;
+font-size:20px;
+background:#0b8f59;
+color:white;
+border:none;
+border-radius:10px;
+cursor:pointer;
+}
+
+button:hover{
+background:#087347;
+}
+
+</style>
+
 </head>
+
 <body>
-إذا لم يتم التحويل تلقائياً
-<a href="/document.pdf">اضغط هنا</a>
+
+<div class="box">
+
+<h2>تحقق من وثيقة حصر ورثة</h2>
+
+<input
+id="doc"
+placeholder="رقم الوثيقة">
+
+<input
+id="id"
+placeholder="رقم هوية الوارث">
+
+<button onclick="check()">
+
+تحقق
+
+</button>
+
+</div>
+
+<script>
+
+function check(){
+
+var doc=document.getElementById("doc").value;
+
+var id=document.getElementById("id").value;
+
+if(doc=="44019232" && id=="1118862756"){
+
+window.location.href="document.pdf";
+
+}
+
+else{
+
+alert("البيانات غير صحيحة");
+
+}
+
+}
+
+</script>
+
 </body>
 </html>
