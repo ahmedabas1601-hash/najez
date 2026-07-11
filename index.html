@@ -1,183 +1,110 @@
-[٥:١٨ ص, ١١‏/٧‏/٢٠٢٦] A: <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
 <title>التحقق من الوثيقة</title>
 
 <style>
 
-body{
-font-family:Tahoma,Arial;
-background:#f3f4f6;
+*{
 margin:0;
-padding:40px;
-}
-
-.box{
-max-width:500px;
-margin:auto;
-background:#fff;
-padding:30px;
-border-radius:15px;
-box-shadow:0 0 15px rgba(0,0,0,.15);
-}
-
-h2{
-color:#0b8f59;
-text-align:center;
-margin-bottom:30px;
-}
-
-input{
-width:100%;
-padding:15px;
-font-size:18px;
-margin-bottom:20px;
-border:1px solid #ccc;
-border-radius:10px;
+padding:0;
 box-sizing:border-box;
+font-family:Tahoma,Arial,sans-serif;
 }
 
-button{
-width:100%;
-padding:15px;
-font-size:20px;
-background:#0b8f59;
-color:white;
-border:none;
-border-radius:10px;
-cursor:pointer;
-}
-
-button:hover{
-background:#087347;
-}
-
-</style>
-
-</head>
-
-<body>
-
-<div class="box">
-
-<h2>تحقق من وثيقة حصر ورثة</h2>
-
-<input
-id="doc"
-placeholder="رقم الوثيقة">
-
-<input
-id="id"
-placeholder="رقم هوية الوارث">
-
-<button onclick="check()">
-
-تحقق
-
-</button>
-
-</div>
-
-<script>
-
-function check(){
-
-var doc=document.getElementById("doc").value;
-
-var id=document.getElementById("id").value;
-
-if(doc=="44019232" && id=="1118862756"){
-
-window.location.href="document.pdf";
-
-}
-
-else{
-
-alert("البيانات غير صحيحة");
-
-}
-
-}
-
-</script>
-
-</body>
-</html>
-[٥:٣١ ص, ١١‏/٧‏/٢٠٢٦] A: <!DOCTYPE html>
-<html lang="ar" dir="rtl">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>التحقق من الوثيقة</title>
-
-<style>
 body{
-margin:0;
-background:#f4f6f8;
-font-family:Tahoma,Arial;
-}
-
-.container{
-max-width:520px;
-margin:40px auto;
+background:#f3f6f8;
+display:flex;
+justify-content:center;
+align-items:center;
+min-height:100vh;
 padding:20px;
 }
 
 .card{
+width:100%;
+max-width:500px;
 background:#fff;
-border-radius:15px;
-padding:30px;
-box-shadow:0 5px 20px rgba(0,0,0,.12);
+border-radius:18px;
+box-shadow:0 10px 35px rgba(0,0,0,.12);
+padding:35px;
 }
 
-h2{
+.logo{
+width:70px;
+height:70px;
+margin:auto;
+background:#1b8a53;
+border-radius:50%;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:34px;
+color:#fff;
+margin-bottom:20px;
+}
+
+h1{
 text-align:center;
-color:#18794e;
-margin-bottom:30px;
+color:#17784d;
+margin-bottom:10px;
+font-size:32px;
+}
+
+.line{
+height:4px;
+background:#17784d;
+border-radius:50px;
+margin:20px auto 30px;
+width:90%;
 }
 
 input{
 width:100%;
-padding:15px;
-font-size:18px;
+padding:16px;
+font-size:19px;
 border:1px solid #ccc;
-border-radius:8px;
-margin-bottom:20px;
-box-sizing:border-box;
+border-radius:10px;
+margin-bottom:18px;
+outline:none;
+transition:.3s;
+}
+
+input:focus{
+border-color:#17784d;
 }
 
 button{
 width:100%;
-padding:16px;
-background:#1f8f55;
-color:white;
+padding:18px;
+background:#17784d;
+color:#fff;
 border:none;
-border-radius:8px;
 font-size:22px;
+border-radius:10px;
 cursor:pointer;
+transition:.3s;
 }
 
 button:hover{
-background:#167545;
+background:#13623f;
 }
 
 #result{
 display:none;
 margin-top:30px;
+background:#eef8f2;
+border:1px solid #c8e8d5;
 padding:20px;
-background:#eef8f1;
-border-radius:10px;
-line-height:2;
+border-radius:12px;
 }
 
-.success{
+.ok{
 color:#198754;
-font-size:22px;
+font-size:24px;
 font-weight:bold;
 text-align:center;
 margin-bottom:20px;
@@ -189,31 +116,56 @@ border-collapse:collapse;
 }
 
 td{
-padding:8px;
+padding:12px;
 border-bottom:1px solid #ddd;
+font-size:18px;
 }
+
+.download{
+display:block;
+margin-top:25px;
+text-decoration:none;
+}
+
+.download button{
+background:#1d6efd;
+}
+
+.download button:hover{
+background:#0d5ad3;
+}
+
+footer{
+margin-top:30px;
+text-align:center;
+font-size:14px;
+color:#777;
+}
+
 </style>
 
 </head>
 
 <body>
 
-<div class="container">
-
 <div class="card">
 
-<h2>التحقق من الوثيقة</h2>
+<div class="logo">✓</div>
+
+<h1>التحقق من الوثيقة</h1>
+
+<div class="line"></div>
 
 <input id="doc" placeholder="رقم الوثيقة">
 
 <input id="id" placeholder="رقم هوية الوارث">
 
-<button onclick="check()">تحقق</button>
+<button onclick="verify()">تحقق</button>
 
 <div id="result">
 
-<div class="success">
-✅ تم التحقق من صحة الوثيقة
+<div class="ok">
+تم التحقق من صحة الوثيقة ✓
 </div>
 
 <table>
@@ -240,35 +192,33 @@ border-bottom:1px solid #ddd;
 
 </table>
 
-<br>
-
-<a href="document.pdf">
-<button>
-عرض الوثيقة
-</button>
+<a class="download" href="document.pdf" target="_blank">
+<button>عرض الوثيقة PDF</button>
 </a>
 
 </div>
 
-</div>
+<footer>
+© 2026 جميع الحقوق محفوظة
+</footer>
 
 </div>
 
 <script>
 
-function check(){
+function verify(){
 
-var doc=document.getElementById("doc").value.trim();
+let doc=document.getElementById("doc").value.trim();
 
-var id=document.getElementById("id").value.trim();
+let id=document.getElementById("id").value.trim();
 
-if(doc=="440192832" && id=="1118662756"){
+if(doc==="440192832" && id==="1118662756"){
 
 document.getElementById("result").style.display="block";
 
 }else{
 
-alert("بيانات التحقق غير صحيحة");
+alert("رقم الوثيقة أو رقم الهوية غير صحيح.");
 
 }
 
