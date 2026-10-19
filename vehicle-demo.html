@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>نموذج بيانات مركبة - تجريبي</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;background:#f5f6f8;font-family:Tahoma,Arial,sans-serif;color:#111827}
+.page{max-width:1000px;margin:0 auto;padding:24px 14px 40px}
+.notice{font-size:13px;color:#7c2d12;background:#fff7ed;border:1px solid #fed7aa;border-radius:8px;padding:10px 12px;margin-bottom:18px;text-align:center}
+h1{font-size:clamp(24px,4vw,42px);margin:14px 0 30px;text-align:right;color:#111;font-weight:800}
+.success{background:#fff;border:2px solid #d1d5db;border-top:12px solid #55b68c;border-radius:16px;padding:28px 24px;margin-bottom:24px;text-align:right}
+.check{display:inline-flex;align-items:center;justify-content:center;width:62px;height:62px;border-radius:12px;background:#374151;color:white;font-size:42px;font-weight:bold;margin-bottom:12px}
+.success p{font-size:clamp(22px,3.5vw,36px);margin:0;color:#374151}
+.summary{display:grid;grid-template-columns:1fr 1fr;gap:18px;align-items:center;background:white;padding:22px 18px;border-bottom:2px solid #d1d5db;margin-bottom:0}
+.blue{color:#459be5;font-size:clamp(22px,3vw,34px);font-weight:500}
+.meta{font-size:clamp(17px,2.4vw,25px);line-height:1.9}
+.meta div{display:flex;gap:10px;align-items:baseline;justify-content:flex-start}
+.meta b{font-weight:500;white-space:nowrap}
+.rows{border:1px solid #d1d5db}
+.row{display:grid;grid-template-columns:1fr 1fr;min-height:78px;border-bottom:1px solid #d1d5db}
+.row:nth-child(odd){background:#f8f9fb}
+.cell{padding:14px 16px;font-size:clamp(17px,2.5vw,25px);line-height:1.5;overflow-wrap:anywhere}
+.label{color:#111747;font-weight:500}
+.value{color:#777}
+.cell .label{display:block;margin-bottom:3px}
+@media(max-width:620px){.summary{grid-template-columns:1fr;gap:12px}.row{grid-template-columns:1fr}.cell{padding:12px 14px}.success{padding:22px 18px}}
+</style>
+</head>
+<body>
+<main class="page">
+  <div class="notice">نموذج تصميم تجريبي غير رسمي — لا يمثل وثيقة حكومية أو تحققًا رسميًا</div>
+  <h1>التحقق من بيانات المركبة</h1>
+  <section class="success">
+    <div class="check">✓</div>
+    <p><strong>تم عرض بيانات المركبة بنجاح</strong></p>
+  </section>
+  <section class="summary">
+    <div class="blue">بطاقة بيانات مركبة — نموذج تجريبي</div>
+    <div class="meta">
+      <div><b>رقم:</b><span>145968</span></div>
+      <div><b>رقم البطاقة:</b><span>26 - 30</span></div>
+      <div><b>التاريخ:</b><span>1447/09/06</span></div>
+    </div>
+  </section>
+  <section class="rows">
+    <div class="row">
+      <div class="cell"><span class="label">نوع المركبة (الشكل):</span><span class="value">بي واي دي - SONG-SA3-<br>سيارة رياضية متعددة الأغراض</span></div>
+      <div class="cell"><span class="label">حالة المركبة:</span><span class="value">جديد</span></div>
+    </div>
+    <div class="row">
+      <div class="cell"><span class="label">سنة الصنع:</span><span class="value">2026</span></div>
+      <div class="cell"><span class="label">حمولة:</span><span class="value">5 راكب 0.41 طن</span></div>
+    </div>
+    <div class="row">
+      <div class="cell"><span class="label">بلد الصنع:</span><span class="value">الصين</span></div>
+      <div class="cell"><span class="label">قوة المحرك:</span><span class="value">كيلو واط</span></div>
+    </div>
+    <div class="row">
+      <div class="cell"><span class="label">رقم القاعدة:</span><span class="value">LGXCD4C42T0139643</span></div>
+      <div class="cell"><span class="label">الوزن:</span><span class="value">2020 كجم</span></div>
+    </div>
+    <div class="row">
+      <div class="cell"><span class="label">رقم المحرك:</span><span class="value">BYD476ZQCL25102894</span></div>
+      <div class="cell"><span class="label">اسم المستورد / المالك:</span><span class="value">خلود طارق محمود هلال</span></div>
+    </div>
+    <div class="row">
+      <div class="cell"><span class="label">اللون:</span><span class="value">رمادي</span></div>
+      <div class="cell"><span class="label">رقم البيان الجمركي:</span><span class="value">131874</span></div>
+    </div>
+    <div class="row">
+      <div class="cell"><span class="label">تاريخ البيان الجمركي:</span><span class="value">1447/09/01</span></div>
+      <div class="cell"><span class="label">جنسية المالك:</span><span class="value">السعودية</span></div>
+    </div>
+    <div class="row">
+      <div class="cell"><span class="label">محل الإقامة:</span><span class="value">غير مذكور</span></div>
+      <div class="cell"><span class="label">لوحة مؤقتة:</span><span class="value">لا يوجد</span></div>
+    </div>
+    <div class="row">
+      <div class="cell"><span class="label">ملاحظات السيارة:</span><span class="value">لا توجد ملاحظات</span></div>
+      <div class="cell"><span class="label">حالة النموذج:</span><span class="value">عرض تجريبي</span></div>
+    </div>
+  </section>
+</main>
+</body>
+</html>
